@@ -26,7 +26,7 @@ Approach:
   **Machine Learning:**
   
   
-  **Evaluation**
+  **Evaluation:**
   
   
 Known Issues:
