@@ -1,1 +1,1 @@
-# KDD_Project_COVID19
+# KDD Project COVID19
