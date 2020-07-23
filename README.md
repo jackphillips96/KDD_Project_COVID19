@@ -18,13 +18,17 @@ Data Sources:
 Approach:
 -
   Data Understanding and EDA:
+  -
   
   Data Preparation:
+  -
   
   Machine Learning:
+  -
   
   Evaluation
-
+  -
+  
 Known Issues:
 -
 
