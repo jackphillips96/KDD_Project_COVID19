@@ -14,7 +14,7 @@ Coronavirus is the virus that causes respiratory infection regardless of age or 
 
 As pandemic has spread across the globe, the virus has left a trail of deaths across continents and countries. Death numbers in Europe and North America are now much larger than in Asia. Where in Latin America, Caribbean and South America a number of  cases are still rising along with deaths. Different continents and countries  epidemics followed different trajectories however certain territories have been affected more than others.
 
-In our project we decided to look at the life expectancy,  by country, where the population is greater than one million and confirm that there is a relationship between age of people that were infected by the virus and death rate.  
+In our project we decided to look at the life expectancy,  by country, where the population is greater than ten million and confirm that there is a relationship between age of people that were infected by the virus and death rate.  
 
 
 Research Question:
