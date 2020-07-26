@@ -66,6 +66,7 @@ We would also like to check for few of the other cleaning methods that might be 
 - Consider feature engineering, if necessary. For instance, the date column can have separate columns for day and month.
 - We can consider one hot encoding or creating dummy variables for the categorical features.
 
+
   
   **Machine Learning:**
   
