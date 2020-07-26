@@ -68,7 +68,7 @@ We would also like to check for few of the other cleaning methods that might be 
 
 
   
-  **Machine Learning:**
+ **Machine Learning:**
   
 We are dealing with an unsupervised learning model as it only has input data and no corresponding output variables. As we have unlabelled data(No Y), we would try to use unsupervised techniques such as K-means clustering to detect patterns and group different countries into categories. This would enable us to find out whether certain countries have similarities related to spread of COVID 19. 
 
