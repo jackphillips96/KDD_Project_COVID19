@@ -56,7 +56,7 @@ Our main concern was to check for correlation amongst  features, that lead us to
 Here is an image showing some of the variables and a heatmap showing correlation values:
 
 
-![](https://i.imgur.com/Qh0LOOk.png =50x50)
+![](https://i.imgur.com/Qh0LOOk.png height="24")
 
   
   
