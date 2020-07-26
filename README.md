@@ -53,6 +53,11 @@ We have performed Exploratory data analysis on our data. EDA refers to the criti
 
 Our main concern was to check for correlation amongst  features, that lead us to use the correlation matrix in determining. There were very few features that had optimum correlation, for instance, the age_65_older, age_75_older, diabetes_prevalance, life_expectancy and so on. Finally, we have chosen to go with life expectancy with a correlation between 0.5 and 0.7, that leads to the spread of COVID. 
 
+Here is an image showing some of the variables and a heatmap showing correlation values:
+
+
+![]()
+
   
   
   **Data Preparation:**
@@ -82,7 +87,7 @@ Also since we have so many variables, we would also use Principal Component Anal
   
 Known Issues:
 -
-There are issues with few features in the dataset, for instance,  that either have no correlation or are highly correlated. A few of the features like diabetes_prevelance, population_density and population are highly correlated considering their threshold.
+There are issues with few features in the dataset, for instance,  that either have no correlation or are highly correlated. A few of the features like diabetes_prevelance, and population are highly correlated considering their threshold. All the issues with the data has to do with it not being preprocessed or cleaned. Our data has to be prepared to be able to perform modeling on. For instance, dealing with missing values and also detecting and removing outliers since there is much of it. We will also consider other cleaning methods necessary to prepare our data for modeling and getting a good accuracy.
 
 Conclusion:
 -
