@@ -82,8 +82,6 @@ We are dealing with an unsupervised learning model as it only has input data and
 Also since we have so many variables, we would also use Principal Component Analysis to reduce the number of variables while capturing variance among different variables.
 
   
-  **Evaluation:**
-  
   
 Known Issues:
 -
