@@ -47,6 +47,8 @@ Approach:
 -
   **Data Understanding and EDA:**
   
+The main features we are looking at in our data are location (country), date, total cases per million, deaths per million, and life expectancy. 
+
 We have performed Exploratory data analysis on our data. EDA refers to the critical process of performing initial investigations on data so as to discover patterns, to spot anomalies, to test  hypotheses and to check assumptions with the help of summary statistics and graphical representations. 
 
 Our main concern was to check for correlation amongst  features, that lead us to use the correlation matrix in determining. There were very few features that had optimum correlation, for instance, the age_65_older, age_75_older, diabetes_prevalance, life_expectancy and so on. Finally, we have chosen to go with life expectancy with a correlation between 0.5 and 0.7, that leads to the spread of COVID. 
