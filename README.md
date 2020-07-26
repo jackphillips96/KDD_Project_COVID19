@@ -91,3 +91,7 @@ There are issues with few features in the dataset, for instance,  that either ha
 
 Conclusion:
 -
+Our main concern is to have a well-prepared data that has been cleaned and preprecessed, ready enough for it to be modelled. Before proceeding to the conclusion of the model, we will evaluate the model thoroughly and review the steps executed to construct the model, to be certain it properly achieves the business objectives. 
+
+Our key objective is to determine if there is some important business issue that has not been sufficiently considered. At the end of this phase, a decision on the use of the data mining results will be reached, that would eventually help us get a good score for our model built.
+
