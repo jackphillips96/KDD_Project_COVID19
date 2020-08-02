@@ -109,7 +109,7 @@ We would also like to check for few of the other cleaning methods that might be 
   
 We would like to use modeling techniques in order to predict future new covid cases. This will be done using an interrupted times series model. Currently we are using a ARIMAX model to predict new cases based on when countries inacted stay at home orders. 
 
-Here we have a prototype of the ARIMAX model for Italy:
+Here we have a prototype of the ARIMAX model for Italy. A new variable was created called stay_3. This variable signifies when the stay at home orders reached a level 3. We are using that feature to measure the impact it had on new cases per million:
 
 ![](https://i.imgur.com/tpqFPAs.png)
 ![](https://i.imgur.com/PxzGxZL.png)
@@ -118,7 +118,7 @@ Here we have a prototype of the ARIMAX model for Italy:
   
 Known Issues:
 -
-There are issues with few features in the dataset, for instance,  that either have no correlation or are highly correlated. A few of the features like diabetes_prevelance, and population are highly correlated considering their threshold. All the issues with the data has to do with it not being preprocessed or cleaned. Our data has to be prepared to be able to perform modeling on. For instance, dealing with missing values and also detecting and removing outliers since there is much of it. We will also consider other cleaning methods necessary to prepare our data for modeling to get a good accuracy.
+There are issues with few features in the dataset, for instance,  that either have no correlation or are highly correlated. A few of the features like diabetes_prevelance, and population are highly correlated considering their threshold. All the issues with the data has to do with it not being preprocessed or cleaned. Our data has to be prepared to be able to perform modeling on. For instance, dealing with missing values and also detecting and removing outliers since there is much of it. We will also consider other cleaning methods necessary to prepare our data for modeling to get a good score.
 
 Conclusion:
 -
