@@ -14,15 +14,25 @@ Coronavirus is the virus that causes respiratory infection regardless of age or 
 
 As pandemic has spread across the globe, the virus has left a trail of deaths across continents and countries. Death numbers in Europe and North America are now much larger than in Asia. Where in Latin America, Caribbean and South America a number of  cases are still rising along with deaths. Different continents and countries  epidemics followed different trajectories however certain territories have been affected more than others.
 
-In our project we decided to look at the life expectancy,  by country, where the population is greater than ten million and confirm that there is a relationship between age of people that were infected by the virus and death rate.  
+Some of the countries were very successful in limiting the spread of virus and others were hit pretty hard. In order to slow down the spread of COVID-19  governments around the world have ordered its citizens to stay at home and practice distancing to help limit coronavirus pandemic. 
+
+In our project we decided to look at the effect of stay at home policy on the number of  total cases by million  and confirm that there is a relationship between implemented measures and infection rate. Below are  coded  response categories for stay at home policy:
+
+0 - No measures
+1 - recommend not leaving house
+2 - require not leaving house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips
+3 - Require not leaving house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.)
+No data - blank
+
 
 
 Research Question:
 -
-Comparing life expectancy across countries  to determine if it has an  effect on the number of deaths per million due to  COVID.
+Estimating impact of stay at home requirements to slow down the number of cases due to the Covid-19 using interrupted time series analysis technique. 
 
 Relevant Domain:
 -
+
 https://academic.oup.com/jpubhealth/article/doi/10.1093/pubmed/fdaa087/5857763
 
 https://thehill.com/changing-america/well-being/longevity/497097-those-who-died-from-covid-19-lost-more-than-a-decade-of
@@ -31,17 +41,34 @@ https://www.businessinsider.com/study-finds-that-people-who-have-coronavirus-cou
 
 https://www.pewresearch.org/fact-tank/2020/04/22/populations-skew-older-in-some-of-the-countries-hit-hard-by-covid-19/
 
+https://hub.jhu.edu/2020/04/02/stay-at-home-order-end-date-affects-compliance/
+
+https://www.cidrap.umn.edu/news-perspective/2020/05/stay-home-orders-likely-slowed-covid-19-spread-study-finds
+
+https://www.medscape.com/viewarticle/930614
+
+https://www.minnpost.com/second-opinion/2020/05/stay-at-home-orders-linked-to-significant-decrease-in-covid-19-hospitalizations-u-of-m-study-finds/
+
+https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19
+https://www.frontiersin.org/articles/10.3389/frai.2020.00041/full
+
+
+
 Data Sources:
 -
 https://ourworldindata.org/coronavirus-source-data
 
-In this project we utilize data that was made available by European Center for Disease Prevention and Control (ECDC). ECDC  collects and harmonizes data from around the world via national health agencies  which allows us to compare and contrast what is happening in different  countries.
+In this project we utilize data that was made available by European Center for Disease Prevention and Control (ECDC) that was made available to us by “our world in data”. ECDC  collects and harmonizes data from around the world via national health agencies  which allows us to compare and contrast what is happening in different  countries.
 
-Confirmed cases and deaths: this data comes from the European Centre for Disease Prevention and Control (ECDC). Note: the number of cases or deaths reported by any institution—including the ECDC, the WHO, Johns Hopkins and others—on a given day does not necessarily represent the actual number on that date. This is because of the long reporting chain that exists between a new case/death and its inclusion in statistics. This also means that negative values in cases and deaths can sometimes appear when a country sends a correction to the ECDC, because it had previously overestimated the number of cases/deaths.
+https://ourworldindata.org/grapher/stay-at-home-covid?time=2020-01-01..
+The Oxford Covid-19 Government Response Tracker (OxCGRT) collects systematic information on which governments have taken which measures, and when. This can help decision-makers and citizens understand governmental responses in a consistent way, aiding efforts to fight the pandemic. The OxCGRT systematically collects information on several different common policy responses governments have taken, records these policies on a scale to reflect the extent of government action, and aggregates these scores into a suite of policy indices.
 
-Testing for COVID-19: this data is collected by the Our World in Data team from official reports.
+The COVID-19 (coronavirus) outbreak has prompted a wide range of responses from governments around the world. There is a pressing need for up-to-date policy information as these responses proliferate, and governments weigh decisions about the stringency of their policies against other concerns.
 
-Other variables: this data is collected from a variety of sources (United Nations, World Bank, Global Burden of Disease, Blavatnik School of Government, etc.).
+The authors introduce the Oxford COVID-19 Government Response Tracker (OxCGRT), providing a systematic way to track the stringency of government responses to COVID-19 across countries and time. 
+
+The data is combined into a series of novel indices that aggregate various measures of government responses. These indices are used to describe variation in government responses, explore whether the government response affects the rate of infection, and identify correlates of more or less intense responses.
+
 
 Approach:
 -
@@ -51,12 +78,9 @@ The main features we are looking at in our data are location (country), date, to
 
 We have performed Exploratory data analysis on our data. EDA refers to the critical process of performing initial investigations on data so as to discover patterns, to spot anomalies, to test  hypotheses and to check assumptions with the help of summary statistics and graphical representations. 
 
-Our main concern was to check for correlation amongst  features, that lead us to use the correlation matrix in determining. There were very few features that had optimum correlation, for instance, the age_65_older, age_75_older, diabetes_prevalance, life_expectancy and so on. Finally, we have chosen to go with life expectancy with a correlation between 0.5 and 0.7, that leads to the spread of COVID. 
-
-Here is an image showing some of the variables and a heatmap showing correlation values:
 
 
-![](https://i.imgur.com/Qh0LOOk.png)
+![]()
 
   
   
