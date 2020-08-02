@@ -16,19 +16,7 @@ As pandemic has spread across the globe, the virus has left a trail of deaths ac
 
 Some of the countries were very successful in limiting the spread of virus and others were hit pretty hard. In order to slow down the spread of COVID-19  governments around the world have ordered its citizens to stay at home and practice distancing to help limit coronavirus pandemic. 
 
-In our project we decided to look at the effect of stay at home policy on the number of  new cases by million  and confirm that there is a relationship between implemented measures and infection rate. Below are  coded  response categories for stay at home policy:
-
-0 - No measures
-
-1 - recommend not leaving the house
-
-2 - require not leaving the house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips
-
-3 - Require not leaving the house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.)
-
-No data - blank
-
-
+In our project we decided to look at the effect of stay at home policy on the number of  new cases by million  and confirm that there is a relationship between implemented measures and infection rate. 
 
 
 Research Question:
@@ -61,9 +49,12 @@ https://www.frontiersin.org/articles/10.3389/frai.2020.00041/full
 
 Data Sources:
 -
+
+For our project we decided to merge two datasets:
+
 https://ourworldindata.org/coronavirus-source-data
 
-In this project we utilize data that was made available by European Center for Disease Prevention and Control (ECDC) that was made available to us by “our world in data”. ECDC  collects and harmonizes data from around the world via national health agencies  which allows us to compare and contrast what is happening in different  countries.
+In this project we first utilized data that was made available by European Center for Disease Prevention and Control (ECDC) that was made available to us by “our world in data”. ECDC  collects and harmonizes data from around the world via national health agencies  which allows us to compare and contrast what is happening in different  countries. 
 
 https://ourworldindata.org/grapher/stay-at-home-covid?time=2020-01-01..
 The Oxford Covid-19 Government Response Tracker (OxCGRT) collects systematic information on which governments have taken which measures, and when. This can help decision-makers and citizens understand governmental responses in a consistent way, aiding efforts to fight the pandemic. The OxCGRT systematically collects information on several different common policy responses governments have taken, records these policies on a scale to reflect the extent of government action, and aggregates these scores into a suite of policy indices.
@@ -72,7 +63,17 @@ The COVID-19 (coronavirus) outbreak has prompted a wide range of responses from 
 
 The authors introduce the Oxford COVID-19 Government Response Tracker (OxCGRT), providing a systematic way to track the stringency of government responses to COVID-19 across countries and time. 
 
-The data is combined into a series of novel indices that aggregate various measures of government responses. These indices are used to describe variation in government responses, explore whether the government response affects the rate of infection, and identify correlates of more or less intense responses.
+The stay at home measure has three levels. Below are  coded  response categories for stay at home policy:
+
+0 - No measures
+
+1 - recommend not leaving the house
+
+2 - require not leaving the house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips
+
+3 - Require not leaving the house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.)
+
+No data - blank
 
 
 Approach:
