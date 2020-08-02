@@ -78,6 +78,10 @@ Approach:
 The main features we are looking at in our data are location (country), date, new cases per million, deaths per million, and stay at home requirements. 
 
 We have performed Exploratory data analysis on our data. EDA refers to the critical process of performing initial investigations on data so as to discover patterns, to spot anomalies, to test  hypotheses and to check assumptions with the help of summary statistics and graphical representations. 
+
+Here we have a chart showing daily new cases per million for Italy:
+
+![](https://i.imgur.com/Cxl1nfa.png)
   
   
   **Data Preparation:**
