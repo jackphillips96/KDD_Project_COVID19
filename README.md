@@ -19,9 +19,13 @@ Some of the countries were very successful in limiting the spread of virus and o
 In our project we decided to look at the effect of stay at home policy on the number of  new cases by million  and confirm that there is a relationship between implemented measures and infection rate. Below are  coded  response categories for stay at home policy:
 
 0 - No measures
+
 1 - recommend not leaving the house
+
 2 - require not leaving the house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips
+
 3 - Require not leaving the house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.)
+
 No data - blank
 
 
