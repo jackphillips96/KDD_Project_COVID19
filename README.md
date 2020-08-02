@@ -16,13 +16,14 @@ As pandemic has spread across the globe, the virus has left a trail of deaths ac
 
 Some of the countries were very successful in limiting the spread of virus and others were hit pretty hard. In order to slow down the spread of COVID-19  governments around the world have ordered its citizens to stay at home and practice distancing to help limit coronavirus pandemic. 
 
-In our project we decided to look at the effect of stay at home policy on the number of  total cases by million  and confirm that there is a relationship between implemented measures and infection rate. Below are  coded  response categories for stay at home policy:
+In our project we decided to look at the effect of stay at home policy on the number of  new cases by million  and confirm that there is a relationship between implemented measures and infection rate. Below are  coded  response categories for stay at home policy:
 
 0 - No measures
-1 - recommend not leaving house
-2 - require not leaving house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips
-3 - Require not leaving house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.)
+1 - recommend not leaving the house
+2 - require not leaving the house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips
+3 - Require not leaving the house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.)
 No data - blank
+
 
 
 
@@ -74,13 +75,13 @@ Approach:
 -
   **Data Understanding and EDA:**
   
-The main features we are looking at in our data are location (country), date, total cases per million, deaths per million, and life expectancy. 
+The main features we are looking at in our data are location (country), date, new cases per million, deaths per million, and stay at home requirements. 
 
 We have performed Exploratory data analysis on our data. EDA refers to the critical process of performing initial investigations on data so as to discover patterns, to spot anomalies, to test  hypotheses and to check assumptions with the help of summary statistics and graphical representations. 
 
+Here we have a prototype of the ARIMAX model for Italy:
 
-
-![]()
+![](https://i.imgur.com/tpqFPAs.png)
 
   
   
@@ -101,10 +102,11 @@ We would also like to check for few of the other cleaning methods that might be 
   
  **Machine Learning:**
   
-We are dealing with an unsupervised learning model as it only has input data and no corresponding output variables. As we have unlabelled data(No Y), we would try to use unsupervised techniques such as K-means clustering to detect patterns and group different countries into categories. This would enable us to find out whether certain countries have similarities related to spread of COVID 19. 
+We would like to use modeling techniques in order to predict future new covid cases. This will be done using an interrupted times series model. Currently we are using a ARIMAX model to predict new cases based on when countries inacted stay at home orders. 
 
-Also since we have so many variables, we would also use Principal Component Analysis to reduce the number of variables while capturing variance among different variables.
+Here we have a prototype of the ARIMAX model for Italy:
 
+![](https://i.imgur.com/tpqFPAs.png)
   
   
 Known Issues:
