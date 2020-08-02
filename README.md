@@ -109,7 +109,7 @@ We would also like to check for few of the other cleaning methods that might be 
   
 We would like to use modeling techniques in order to predict future new covid cases. This will be done using an interrupted times series model. Currently we are using a ARIMAX model to predict new cases based on when countries inacted stay at home orders. 
 
-Here we have a prototype of the ARIMAX model for Italy. A new variable was created called stay_3. This variable signifies when the stay at home orders reached a level 3. We are using that feature to measure the impact it had on new cases per million:
+Here we have a prototype of the ARIMAX model for Italy. A new variable was created called stay_3. This variable signifies the date when the stay at home orders reached a level 3. We are using that feature to measure the impact it had on new cases per million. As you can see it had a statistically significant negative effect on new cases per million :
 
 ![](https://i.imgur.com/tpqFPAs.png)
 ![](https://i.imgur.com/PxzGxZL.png)
