@@ -54,16 +54,14 @@ For our project we decided to merge two datasets:
 
 https://ourworldindata.org/coronavirus-source-data
 
-In this project we first utilized data that was made available by European Center for Disease Prevention and Control (ECDC) that was made available to us by “our world in data”. ECDC  collects and harmonizes data from around the world via national health agencies  which allows us to compare and contrast what is happening in different  countries. 
+We first utilized data that was made available by European Center for Disease Prevention and Control (ECDC) that was made available to us by “our world in data”. ECDC  collects and harmonizes data from around the world via national health agencies  which allows us to compare and contrast what is happening in different  countries. 
 
 https://ourworldindata.org/grapher/stay-at-home-covid?time=2020-01-01..
 The Oxford Covid-19 Government Response Tracker (OxCGRT) collects systematic information on which governments have taken which measures, and when. This can help decision-makers and citizens understand governmental responses in a consistent way, aiding efforts to fight the pandemic. The OxCGRT systematically collects information on several different common policy responses governments have taken, records these policies on a scale to reflect the extent of government action, and aggregates these scores into a suite of policy indices.
 
-The COVID-19 (coronavirus) outbreak has prompted a wide range of responses from governments around the world. There is a pressing need for up-to-date policy information as these responses proliferate, and governments weigh decisions about the stringency of their policies against other concerns.
+The COVID-19 (coronavirus) outbreak has prompted a wide range of responses from governments around the world. There is a pressing need for up-to-date policy information as these responses proliferate, and governments weigh decisions about the stringency of their policies against other concerns. The authors introduce the Oxford COVID-19 Government Response Tracker (OxCGRT), providing a systematic way to track the stringency of government responses to COVID-19 across countries and time. 
 
-The authors introduce the Oxford COVID-19 Government Response Tracker (OxCGRT), providing a systematic way to track the stringency of government responses to COVID-19 across countries and time. 
-
-The stay at home measure has three levels. Below are  coded  response categories for stay at home policy:
+For our purposes we are using their stay at home measures recorded for each country to join to our main dataset. This measure has three levels. Below are  coded  response categories for stay at home policy:
 
 0 - No measures
 
@@ -86,7 +84,7 @@ We have performed Exploratory data analysis on our data. EDA refers to the criti
 
 Our main concern was to check for correlation amongst  features, that lead us to using the correlation matrix in determining. Our idea is to pick a few countries that have been highly affected and then ultimately analyze the effect, the stay at home requirements has on the new_cases_per_million
 
-Here we have a chart showing daily new cases per million for Italy:
+Here we have a chart showing daily new cases per million for Italy :
 
 ![](https://i.imgur.com/Cxl1nfa.png)
   
@@ -108,9 +106,9 @@ We would also like to check for few of the other cleaning methods that might be 
   
  **Machine Learning:**
   
-We would like to use modeling techniques in order to predict future new covid cases. This will be done using an interrupted times series model. Currently we are using a ARIMAX model to predict new cases based on when countries inacted stay at home orders. 
+Here we are going to use modeling techniques in order to predict future new covid cases. This will be done using an interrupted times series model. Currently we are using a ARIMAX model to predict new cases based on when countries inacted stay at home orders. 
 
-Here we have a prototype of the ARIMAX model for Italy. A new variable was created called stay_3. This variable signifies the date when the stay at home orders reached a level 3. We are using that feature to measure the impact it had on new cases per million. As you can see it had a statistically significant negative effect on new cases per million :
+Here we have a prototype of the ARIMAX model for Italy. A new variable was created called stay_3. This variable signifies the date when the stay at home orders reached a level 3. We are using that feature to measure the impact it had on new cases per million. As you can see it had a statistically significant negative effect on new cases per million once it was inacted :
 
 ![](https://i.imgur.com/tpqFPAs.png)
 ![](https://i.imgur.com/PxzGxZL.png)
@@ -124,6 +122,8 @@ There are issues with few features in the dataset, for instance,  that either ha
 Conclusion:
 -
 Our main concern is to have a well-prepared data that has been cleaned and preprecessed, ready enough for it to be modelled. Before proceeding to the conclusion of the model, we will evaluate the model thoroughly and review the steps executed to construct the model, to be certain it properly achieves the business objectives. 
+
+We also have concerns about modeling the data given the relatively limited sample since of data. 
 
 Our key objective is to determine if there is some important business issue that has not been sufficiently considered. At the end of this phase, a decision on the use of the data mining results will be reached, that would eventually help us get a good score for our model built.
 
