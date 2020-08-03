@@ -84,7 +84,7 @@ We have performed Exploratory data analysis on our data. EDA refers to the criti
 
 Our main concern was to check for correlation amongst  features, that lead us to us graphing new cases over time for countries and the checking to see if there was a realtionship between a drop in cases and stay at home requirements. Our idea is to pick a few countries that have been highly affected and then ultimately analyze the effect, the stay at home requirements has on the new_cases_per_million
 
-Here we have a chart showing daily new cases per million for Italy. Since they were hit very hard with the virus they are a country we are interested in. We are hoping that the spike and subsequent drop in new cases can be explained by the country's stay at home orders :
+Here we have a chart showing daily new cases per million for Italy. Since they were hit very hard with the virus they are a country we are interested in. We are hoping that the spike and subsequent drop in new cases can be explained by the country's stay at home orders. We found that march 20th is when Italy increased stay at home orders to a level 3 and that is also around when new cases started to drop off:
 
 ![](https://i.imgur.com/Cxl1nfa.png)
   
