@@ -94,7 +94,7 @@ We would also like to check for few of the other cleaning methods that might be 
 - Consider feature engineering, if necessary. For instance, the date column can have separate columns for day and month.
 - We can consider one hot encoding or creating dummy variables for the categorical features.
 
-In order to prepare our data for a interrupted time series model I had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are inacted. This allowed the model to measure the impact of the stay at home orders before and after this point. Below is the code we used for Italy:
+In order to prepare our data for a interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are inacted. This allowed the model to measure the impact of the stay at home orders before and after this point. Below is the code we used for Italy:
 
 ![](https://i.imgur.com/a4ukawn.png)
 
