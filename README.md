@@ -26,14 +26,6 @@ Estimating impact of stay at home requirements to slow down the number of cases 
 Relevant Domain:
 -
 
-https://academic.oup.com/jpubhealth/article/doi/10.1093/pubmed/fdaa087/5857763
-
-https://thehill.com/changing-america/well-being/longevity/497097-those-who-died-from-covid-19-lost-more-than-a-decade-of
-
-https://www.businessinsider.com/study-finds-that-people-who-have-coronavirus-could-die-10-years-early-2020-5
-
-https://www.pewresearch.org/fact-tank/2020/04/22/populations-skew-older-in-some-of-the-countries-hit-hard-by-covid-19/
-
 https://hub.jhu.edu/2020/04/02/stay-at-home-order-end-date-affects-compliance/
 
 https://www.cidrap.umn.edu/news-perspective/2020/05/stay-home-orders-likely-slowed-covid-19-spread-study-finds
