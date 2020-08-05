@@ -19,11 +19,9 @@ Some of the countries were very successful in limiting the spread of the virus a
 In our project, we decided to look at the effect of stay at home policy on the number of new cases by million and confirm that there is a relationship between implemented measures and infection rate. 
 
 
-
-
 Research Question:
 -
-Estimating the impact of stay at home requirements to slow down the number of new cases due to Covid-19 in countries like Italy, Pakistan, and Germany via a combination of  ARIMA dynamics with intervention analysis. 
+Estimating the impact of stay at home requirements to slow down the number of new positive cases due to Covid-19 in countries like Italy, Pakistan, and Germany via a combination of  ARIMA dynamics with intervention analysis. 
 
 Relevant Domain:
 -
@@ -38,6 +36,10 @@ https://www.minnpost.com/second-opinion/2020/05/stay-at-home-orders-linked-to-si
 
 https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19
 https://www.frontiersin.org/articles/10.3389/frai.2020.00041/full
+
+https://www.vox.com/2020/5/1/21239638/germany-coronavirus-lockdown-reopening-merkel
+
+https://indianexpress.com/article/trending/trending-globally/pak-pm-imran-khan-coronavirus-address-criticism-6320050/
 
 
 
@@ -78,7 +80,7 @@ We have performed Exploratory data analysis on our data. EDA refers to the criti
 
 Our main concern was to check for correlation amongst features, that lead us to us graphing new cases over time for countries and then checking to see if there was a relationship between a drop in cases and stay at home requirements. Our idea is to pick a few countries that have been highly affected and then ultimately analyze the effect, the stay at home requirements has on the new_cases_per_million
 
-Here we have a chart showing daily new cases per million for Italy, Germany, and Pakistan. Since they were hit very hard with the virus they are countries we are interested in. We are hoping that the spike and subsequent drop in new cases can be explained by the country's stay at home orders. On each chart the red line indicates when stay at home orders were increased or enacted. The blue line is new cases per million over time. 
+Here we have a chart showing daily new cases per million for Italy, Germany, and Pakistan. Since they were hit very hard with the virus, we are interested in considering them for our analysis. We are hoping that the spike and subsequent drop in new cases can be explained by the country's stay at home orders. On each chart, the red line indicates when stay at home orders were increased to their highest level in each country. The blue line is new cases per million over time. 
 
 **Italy:**
 ![](https://i.imgur.com/ypbw6rf.png)
@@ -91,7 +93,9 @@ Here we have a chart showing daily new cases per million for Italy, Germany, and
   
   
   **Data Preparation:**
-  Data preparation is a vital step in the data science process for any valuable insights to pop up. We must explore the quality of our data, seeking to understand both its state and limitations. The foremost and important step of the data preparation task that deals with correcting inconsistent data is filling out missing values and smoothing out noisy data. Our data contains a huge number of missing values that we are dealing with, all of which, either will be imputed or dropped depending on the effectiveness.
+ Data preparation is a vital step in the data science process for any valuable insights to pop up. We must explore the quality of our data, seeking to understand both its state and limitations. The foremost and important step of the data preparation task that deals with correcting inconsistent data is filling out missing values and smoothing out noisy data. Our data does not contain a  huge number of missing values for us to deal with. 
+
+One of the  steps that we took was manipulating the structure of the dataset stay-at-home-covid provided  by the Oxford Covid-19 Government Response Tracker (OxCGRT). We transformed  columns with dates to become rows by using Power Query. Doing this step allowed us to join two data sets with the same structure.
 
 We would also like to check for a few of the other cleaning methods that might be necessary for our data:
 - Check the data for outliers and redundant values.
@@ -102,8 +106,9 @@ We would also like to check for a few of the other cleaning methods that might b
 - Consider standardizing the features, if necessary.
 - Consider feature engineering, if necessary. For instance, the date column can have separate columns for day and month.
 - We can consider one-hot encoding or creating dummy variables for the categorical features.
+Our data
 
-To prepare our data for an interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are enacted. This allowed the model to measure the impact of the stay at home orders before and after this point. Below is the code we used for Italy:
+To prepare our data for an interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are enacted in Italy and when Germany and Pakistan raised their level to a 2. This allowed the model to measure the impact of the stay at home orders before and after their highest point. Below is the code we used for Italy:
 
 ![](https://i.imgur.com/1OBfTfc.png)
 
@@ -112,7 +117,7 @@ To prepare our data for an interrupted time series model we had to create a new 
   
 Here we are using modeling techniques to analyze the relationship between the stay at home orders and new cases per million . This will be done using an interrupted times series model. Currently, we are using an ARIMAX model to predict new cases based on when countries enacted stay at home orders. 
 
-Here we have our ARIMAX models for Italy, Germany, and Pakistan. A new variable was created called stay_3. This variable signifies the date when the stay at home orders reached a level 3. We are using that feature to measure the impact it had on new cases per million. As you can see it had a statistically significant negative effect on new cases per million once it was enacted :
+Here we have our ARIMAX models for Italy, Germany, and Pakistan. A new variable was created called stay_3. This variable signifies the date when the stay at home orders reached a level 3 in Italy and a level 2 in Germany and Pakistan. We are using that feature to measure the impact it had on new cases per million. As you can see it had a statistically significant negative effect on new cases per million once it was enacted :
 
 **Italy:**
 ![](https://i.imgur.com/FegTr7q.png) 
@@ -126,18 +131,31 @@ Here we have our ARIMAX models for Italy, Germany, and Pakistan. A new variable 
 ![](https://i.imgur.com/0s7OgPx.png) 
 ![](https://i.imgur.com/xdmCDV6.png) 
 
+**Evaluation**
 
+Italy had the highest parameter estimate for the stay at home orders at -5.79 followed by Germany with a value of -2.7 and last was Pakistan with a value of -.77. Overall the values were all very statistically significant with p-values well under .05 meaning they all had definite impacts on the number of new COVID-19 cases per day. We believe that Italy had the most significant impact since they increased their stay at home orders to a level 3 whereas Germany and Pakistan only raised them to a level 2. Based on this, we would highly recommend that countries raise their stay at home order level to a 3 to have the biggest negative impact of daily new positive cases. 
 
-
-  
   
 Known Issues:
 -
 There are issues with few features in the dataset, for instance,  that either has no correlation or are highly correlated. A few of the features like diabetes_prevelance and population are highly correlated considering their threshold. All the issues with the data have to do with it not being preprocessed or cleaned. Our data has to be prepared to be able to perform modeling on. For instance, dealing with missing values and also detecting and removing outliers since there is much of it. We will also consider other cleaning methods necessary to prepare our data for modeling to get a good score.
 
+Another important issue is the relative lack of data. Since the new cases ramped up so fast in these countries, it's harder for the model to judge the impact of the stay at home orders before and after. Due to this we believe that the model’s estimate for the stay variable underestimates the actual impact it had.
+
+
+
 Conclusion:
 -
-Our key objective was to determine how much of an effect the stay at home order have to prevent the spread of COVID-19. From our modeling techniques, a clear, statistically significant relationship can be seen from raising stay at home orders and the lowering of new covid cases per million. 
+Our key objective was to determine how much of an effect the stay at home order has to prevent the spread of COVID-19. From our modeling techniques, a clear, statistically significant relationship can be seen from raising stay at home orders and the lowering of new covid cases per million. The biggest impact was raising the stay at home orders in Italy to a level 3 compared to Germany and Pakistan only raising their orders to a level 2. 
+
+
+
+
+References:
+-
+
+https://pyflux.readthedocs.io/en/latest/arimax.html
+
 
 
 
