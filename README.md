@@ -78,14 +78,15 @@ We have performed Exploratory data analysis on our data. EDA refers to the criti
 
 Our main concern was to check for correlation amongst features, that lead us to us graphing new cases over time for countries and then checking to see if there was a relationship between a drop in cases and stay at home requirements. Our idea is to pick a few countries that have been highly affected and then ultimately analyze the effect, the stay at home requirements has on the new_cases_per_million
 
-Here we have a chart showing daily new cases per million for Italy, Germany, and Pakistan. Since they were hit very hard with the virus they are countries we are interested in. We are hoping that the spike and subsequent drop in new cases can be explained by the country's stay at home orders. On each chart the red line indicates when stay at home orders were increased or enacted. The blue line is new cases per million over time. :
-Italy:
+Here we have a chart showing daily new cases per million for Italy, Germany, and Pakistan. Since they were hit very hard with the virus they are countries we are interested in. We are hoping that the spike and subsequent drop in new cases can be explained by the country's stay at home orders. On each chart the red line indicates when stay at home orders were increased or enacted. The blue line is new cases per million over time. 
+
+**Italy:**
 ![](https://i.imgur.com/ypbw6rf.png)
 
-Germany:
+**Germany:**
 ![](https://i.imgur.com/9c83vhc.png)
 
-Pakistan:
+**Pakistan:**
 ![](https://i.imgur.com/EFFce0r.png)
   
   
@@ -113,15 +114,15 @@ Here we are using modeling techniques to analyze the relationship between the st
 
 Here we have our ARIMAX models for Italy, Germany, and Pakistan. A new variable was created called stay_3. This variable signifies the date when the stay at home orders reached a level 3. We are using that feature to measure the impact it had on new cases per million. As you can see it had a statistically significant negative effect on new cases per million once it was enacted :
 
-Italy:
+**Italy:**
 ![](https://i.imgur.com/FegTr7q.png) 
 ![](https://i.imgur.com/bzoVeZn.png)
 
-Germany:
+**Germany:**
 ![](https://i.imgur.com/5MWkOsB.png) 
 ![](https://i.imgur.com/s3eXP2l.png)
 
-Pakistan:
+**Pakistan:**
 ![](https://i.imgur.com/0s7OgPx.png) 
 ![](https://i.imgur.com/xdmCDV6.png) 
 
