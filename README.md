@@ -105,7 +105,7 @@ We would also like to check for a few of the other cleaning methods that might b
 
 To prepare our data for an interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are enacted. This allowed the model to measure the impact of the stay at home orders before and after this point. Below is the code we used for Italy:
 
-![](https://i.imgur.com/a4ukawn.png)
+![](https://i.imgur.com/1OBfTfc.png)
 
   
  **Machine Learning:**
