@@ -107,7 +107,7 @@ We would also like to check for a few of the other cleaning methods that might b
 - We can consider one-hot encoding or creating dummy variables for the categorical features.
 
 
-To prepare our data for an interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are enacted in Italy and when Germany and Pakistan raised their level to a 2. This allowed the model to measure the impact of the stay at home orders before and after their highest point. Fortunately there was no missing values for the countries with the variables we chose so we did have any imputed values for these. Below is the code we used for Italy:
+To prepare our data for an interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are enacted in Italy and when Germany and Pakistan raised their level to a 2 and a value of 0 for the dates before. This allowed the model to measure the impact of the stay at home orders before and after their highest point. Fortunately there was no missing values for the countries with the variables we chose so we did have any imputed values for these. Below is the code we used for Italy:
 
 ![](https://i.imgur.com/1OBfTfc.png)
 
