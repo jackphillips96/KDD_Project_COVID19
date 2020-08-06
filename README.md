@@ -105,9 +105,9 @@ We would also like to check for a few of the other cleaning methods that might b
 - Consider standardizing the features, if necessary.
 - Consider feature engineering, if necessary. For instance, the date column can have separate columns for day and month.
 - We can consider one-hot encoding or creating dummy variables for the categorical features.
-Our data
 
-To prepare our data for an interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are enacted in Italy and when Germany and Pakistan raised their level to a 2. This allowed the model to measure the impact of the stay at home orders before and after their highest point. Below is the code we used for Italy:
+
+To prepare our data for an interrupted time series model we had to create a new variable called stay_3 that gives a value of 1 for the dates after level 3 stay at home orders are enacted in Italy and when Germany and Pakistan raised their level to a 2. This allowed the model to measure the impact of the stay at home orders before and after their highest point. Fortunately there was no missing values for the countries with the variables we chose so we did have any imputed values for these. Below is the code we used for Italy:
 
 ![](https://i.imgur.com/1OBfTfc.png)
 
@@ -137,7 +137,7 @@ Italy had the highest parameter estimate for the stay at home orders at -5.79 fo
   
 Known Issues:
 -
-There are issues with few features in the dataset, for instance,  that either has no correlation or are highly correlated. A few of the features like diabetes_prevelance and population are highly correlated considering their threshold. All the issues with the data have to do with it not being preprocessed or cleaned. Our data has to be prepared to be able to perform modeling on. For instance, dealing with missing values and also detecting and removing outliers since there is much of it. We will also consider other cleaning methods necessary to prepare our data for modeling to get a good score.
+There are issues with few features in the dataset, for instance,  that either has no correlation or are highly correlated. A few of the features like diabetes_prevelance and population are highly correlated considering their threshold. All the issues with the data have to do with it not being preprocessed or cleaned. Our data has to be prepared to be able to perform modeling on.  We will also consider other cleaning methods necessary to prepare our data for modeling to get a good score.
 
 Another important issue is the relative lack of data. Since the new cases ramped up so fast in these countries, it's harder for the model to judge the impact of the stay at home orders before and after. Due to this we believe that the model’s estimate for the stay variable underestimates the actual impact it had.
 
