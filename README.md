@@ -95,7 +95,6 @@ Here we have a chart showing daily new cases per million for Italy, Germany, and
   **Data Preparation:**
  Data preparation is a vital step in the data science process for any valuable insights to pop up. We must explore the quality of our data, seeking to understand both its state and limitations. The foremost and important step of the data preparation task that deals with correcting inconsistent data is filling out missing values and smoothing out noisy data. Our data does not contain a  huge number of missing values for us to deal with. 
 
-One of the  steps that we took was manipulating the structure of the dataset stay-at-home-covid provided  by the Oxford Covid-19 Government Response Tracker (OxCGRT). We transformed  columns with dates to become rows by using Power Query. Doing this step allowed us to join two data sets with the same structure.
 
 We would also like to check for a few of the other cleaning methods that might be necessary for our data:
 - Check the data for outliers and redundant values.
